@@ -1,6 +1,6 @@
 # JD Davenport
 
-I run a production multi-agent AI organization on Claude. It sends email as me, fixes code without me watching, and operates on real money and real hardware, daily since April 2026. This account is the open half: the pieces I pulled out, cleaned up, and licensed so anyone can run them.
+I run a production multi-agent AI organization on Claude. It sends email as me, fixes code without me watching, and operates on real money and real hardware, daily since Nov 2025. This account is the open half: the pieces I pulled out, cleaned up, and licensed so anyone can run them.
 
 Everything here is bring-your-own-key and self-hostable. More at [jddavenport.com](https://jddavenport.com).
 
