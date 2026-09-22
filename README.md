@@ -2,11 +2,24 @@
 
 I run a production multi-agent AI organization on Claude. It sends email as me, fixes code without me watching, and operates on real money and real hardware, daily since Nov 2025. This account is the open half: the pieces I pulled out, cleaned up, and licensed so anyone can run them.
 
-Everything here is bring-your-own-key and self-hostable. More at [jddavenport.com](https://jddavenport.com).
+Everything here is bring-your-own-key and self-hostable. More at [jddavenport.com](https://jddavenportopen.github.io/jddavenport.com/).
 
 ## Start with the case study
 
 [**agent-safety-case-study**](https://github.com/jddavenportOpen/agent-safety-case-study) is the honest account of running that system: each capability paired with the risk it creates, the control that bounds it, the tradeoff I accepted, and a dated incident where the control was not enough. It includes the review panel whose 3-of-3 quorum turned out to be 1-of-3 with a hardcoded receipt, and what that cost to find.
+
+## AI PM portfolio
+
+Three repos extracted from the live 54-agent production system, positioned around the four things teams building AI products actually need to think about: orchestration, safety, and evaluation.
+
+**[clawd-agent-os](https://github.com/jddavenportOpen/clawd-agent-os)**
+Production framework for orchestrating hierarchical Claude agent fleets. CEO/worker tiers, git-worktree-isolated spawning, a durable bus that raises instead of silently returning empty, single-registry model tiering with a drift guard. 33 tests. Extracted from a 24/7 live system.
+
+**[ethos-gate](https://github.com/jddavenportOpen/ethos-gate)**
+Application-layer safety for autonomous agents: PreToolUse/Stop hooks, three-tier credential policy (UNIVERSAL/STRICT/SANDBOX), an irreversibility guard, and a lethal-trifecta auditor that catches the combination-level exposure no per-leg check can see. 62 tests. MIT.
+
+**[clawd-evals](https://github.com/jddavenportOpen/clawd-evals)**
+Behavioral evaluation framework for agentic systems — tests agent *conduct*, not output quality. Two-gate model promotion bench with no LLM judge, blast-radius-aware eval tiers, prompt injection resistance suite, irreversibility awareness classifier, and over-refusal detection. 57 tests. The LLM-judge problem and why we don't use one is in `docs/philosophy.md`.
 
 ## The six
 
@@ -27,11 +40,11 @@ A Claude Code plugin that treats a job search as a verification problem: intake,
 
 ## Everything else
 
-Agents and tooling: [fleetwright](https://github.com/jddavenportOpen/fleetwright) (self-hosted agent-operations OS) · [clawdling](https://github.com/jddavenportOpen/clawdling) (BYOK personal AI assistant) · [deep-research-agent](https://github.com/jddavenportOpen/deep-research-agent) (research with an adversarial verification pass) · [harnessview](https://github.com/jddavenportOpen/harnessview) (visualize a Claude Code harness and flag broken wiring) · [context-kit](https://github.com/jddavenportOpen/context-kit) (personal-context templates and skills) · [voiceclaw](https://github.com/jddavenportOpen/voiceclaw) (voice agent over the phone)
+Agents and tooling: [fleetwright](https://github.com/jddavenportOpen/fleetwright) (self-hosted agent-operations OS) · [deep-research-agent](https://github.com/jddavenportOpen/deep-research-agent) (research with an adversarial verification pass) · [harnessview](https://github.com/jddavenportOpen/harnessview) (visualize a Claude Code harness and flag broken wiring) · [context-kit](https://github.com/jddavenportOpen/context-kit) (personal-context templates and skills) · [voiceclaw](https://github.com/jddavenportOpen/voiceclaw) (voice agent over the phone)
 
 Evals and analysis: [vibe-coding-detector](https://github.com/jddavenportOpen/vibe-coding-detector) · [agi-readiness-auditor](https://github.com/jddavenportOpen/agi-readiness-auditor) · [resume-grader](https://github.com/jddavenportOpen/resume-grader) · [ai-spend-tracker](https://github.com/jddavenportOpen/ai-spend-tracker) · [mastery-engine](https://github.com/jddavenportOpen/mastery-engine)
 
-Self-hosted tools: [openbudget](https://github.com/jddavenportOpen/openbudget) · [openplaud](https://github.com/jddavenportOpen/openplaud) · [open-remarkable](https://github.com/jddavenportOpen/open-remarkable) · [byu-outlook-browser-integration](https://github.com/jddavenportOpen/byu-outlook-browser-integration)
+Self-hosted tools: [openbudget](https://github.com/jddavenportOpen/openbudget) · [openplaud](https://github.com/jddavenportOpen/openplaud) · [byu-outlook-browser-integration](https://github.com/jddavenportOpen/byu-outlook-browser-integration)
 
 Teaching and product: [ai-fluency-trainer](https://github.com/jddavenportOpen/ai-fluency-trainer) · [pitchgrade](https://github.com/jddavenportOpen/pitchgrade) · [venture-val](https://github.com/jddavenportOpen/venture-val) · [caseprep](https://github.com/jddavenportOpen/caseprep) · [acquisitor](https://github.com/jddavenportOpen/acquisitor)
 
