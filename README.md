@@ -1,16 +1,32 @@
 # JD Davenport
 
-I run a production multi-agent AI organization on Claude. It sends email as me, fixes code without me watching, and operates on real money and real hardware, daily since Nov 2025. This account is the open half: the pieces I pulled out, cleaned up, and licensed so anyone can run them.
+50+ agents in daily production · 100+ built over time · running since Nov 2025
+
+I run a production multi-agent AI organization on Claude. It sends email as me, fixes code without me watching, and operates on real money and real hardware, daily. This account is the open half: the pieces I pulled out, cleaned up, and licensed so anyone can run them.
 
 Everything here is bring-your-own-key and self-hostable. More at [jddavenport.com](https://jddavenportopen.github.io/jddavenport.com/).
+
+---
+
+## Background
+
+Product leader turned AI builder. Currently BYU MBA (Strategy & Product Management, 2025–2027) while running the agent system full-time.
+
+Before the MBA: Principal PM at **National Grid** — grew a fixed-price digital services business from $2M to $20M+ annualized revenue, prototyped an AI-driven dynamic pricing engine (+22% margins), and launched an internal GenAI platform with 3,000+ monthly active users. Earlier: co-founder/CPO at a Web3 fintech startup (raised $1.2M pre-seed, $600K revenue in 90 days), Senior Consultant at Deloitte (Pfizer, GM, Walmart).
+
+Full career and case study: [jddavenport.com](https://jddavenportopen.github.io/jddavenport.com/)
+
+---
 
 ## Start with the case study
 
 [**agent-safety-case-study**](https://github.com/jddavenportOpen/agent-safety-case-study) is the honest account of running that system: each capability paired with the risk it creates, the control that bounds it, the tradeoff I accepted, and a dated incident where the control was not enough. It includes the review panel whose 3-of-3 quorum turned out to be 1-of-3 with a hardcoded receipt, and what that cost to find.
 
+---
+
 ## AI PM portfolio
 
-Three repos extracted from the live 54-agent production system, positioned around the four things teams building AI products actually need to think about: orchestration, safety, and evaluation.
+Three repos extracted from the live production system, positioned around the four things teams building AI products actually need to think about: orchestration, safety, and evaluation.
 
 **[clawd-agent-os](https://github.com/jddavenportOpen/clawd-agent-os)**
 Production framework for orchestrating hierarchical Claude agent fleets. CEO/worker tiers, git-worktree-isolated spawning, a durable bus that raises instead of silently returning empty, single-registry model tiering with a drift guard. 33 tests. Extracted from a 24/7 live system.
@@ -20,6 +36,8 @@ Application-layer safety for autonomous agents: PreToolUse/Stop hooks, three-tie
 
 **[clawd-evals](https://github.com/jddavenportOpen/clawd-evals)**
 Behavioral evaluation framework for agentic systems — tests agent *conduct*, not output quality. Two-gate model promotion bench with no LLM judge, blast-radius-aware eval tiers, prompt injection resistance suite, irreversibility awareness classifier, and over-refusal detection. 57 tests. The LLM-judge problem and why we don't use one is in `docs/philosophy.md`.
+
+---
 
 ## The six
 
@@ -38,6 +56,8 @@ Autonomous bug fixing that out of the box can never merge. Red-to-green reproduc
 **[recruit-copilot](https://github.com/jddavenportOpen/recruit-copilot)**
 A Claude Code plugin that treats a job search as a verification problem: intake, goals, scouting, tailoring, and a calibrated grading panel with layout and round-trip gates. It does not apply for you. That is the point, not a limitation.
 
+---
+
 ## Everything else
 
 Agents and tooling: [fleetwright](https://github.com/jddavenportOpen/fleetwright) (self-hosted agent-operations OS) · [deep-research-agent](https://github.com/jddavenportOpen/deep-research-agent) (research with an adversarial verification pass) · [harnessview](https://github.com/jddavenportOpen/harnessview) (visualize a Claude Code harness and flag broken wiring) · [context-kit](https://github.com/jddavenportOpen/context-kit) (personal-context templates and skills) · [voiceclaw](https://github.com/jddavenportOpen/voiceclaw) (voice agent over the phone)
@@ -47,5 +67,17 @@ Evals and analysis: [vibe-coding-detector](https://github.com/jddavenportOpen/vi
 Self-hosted tools: [openbudget](https://github.com/jddavenportOpen/openbudget) · [openplaud](https://github.com/jddavenportOpen/openplaud) · [byu-outlook-browser-integration](https://github.com/jddavenportOpen/byu-outlook-browser-integration)
 
 Teaching and product: [ai-fluency-trainer](https://github.com/jddavenportOpen/ai-fluency-trainer) · [pitchgrade](https://github.com/jddavenportOpen/pitchgrade) · [venture-val](https://github.com/jddavenportOpen/venture-val) · [caseprep](https://github.com/jddavenportOpen/caseprep) · [acquisitor](https://github.com/jddavenportOpen/acquisitor)
+
+---
+
+## Stack
+
+Claude (Opus/Sonnet/Haiku fleet) · Python · Next.js · TypeScript · Playwright · Supabase/Postgres · Vercel · GitHub Actions · MCP · LaunchAgents (macOS) · Tailscale
+
+---
+
+## Open to Applied AI and forward-deployed engineering work
+
+[me@jddavenport.com](mailto:me@jddavenport.com) · [LinkedIn](https://linkedin.com/in/jd-davenport) · [jddavenport.com](https://jddavenportopen.github.io/jddavenport.com/)
 
 Licenses vary by repo. Check the LICENSE file in each one. PRs welcome.
