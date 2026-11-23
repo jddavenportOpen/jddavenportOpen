@@ -8,14 +8,16 @@ On the side I built Nerve Center, my own agent system. I've built 100+ agents fo
 
 These repos are pieces I pulled out of it so other people can run them. I set this account up in July 2026. Some repos came over from my private working repo with their history, so their commit dates are older than the account.
 
-- [agent-safety-case-study](https://github.com/jddavenportOpen/agent-safety-case-study): what I let the agents do, what broke, and what I changed after each incident. Start here.
-- [clawdling](https://github.com/jddavenportOpen/clawdling): run several Claude Code projects at once and see which "done" claims were actually tested.
-- [ccstitch](https://github.com/jddavenportOpen/ccstitch): a local trace viewer for Claude Code. It works around a telemetry bug in the CLI ([claude-code#99607](https://github.com/anthropics/claude-code/issues/99607)).
 - [claude-code-behavior-specs](https://github.com/jddavenportOpen/claude-code-behavior-specs): three Claude Code CLI bugs I hit running agents headless, each with a repro script.
+- [ccstitch](https://github.com/jddavenportOpen/ccstitch): a local trace viewer for Claude Code. It works around a telemetry bug in the CLI ([claude-code#99607](https://github.com/anthropics/claude-code/issues/99607)).
+- [clawdling](https://github.com/jddavenportOpen/clawdling): run several Claude Code projects at once and see which "done" claims were actually tested.
 - [warden](https://github.com/jddavenportOpen/warden): lets an agent fix something on its own only when the fix can be undone and a check proves it worked.
-- [recruit-copilot](https://github.com/jddavenportOpen/recruit-copilot): a Claude Code plugin for a job search. It checks every resume line against your own record and never submits. Truthfully I hate filling in job applications. That's where this one came from.
+- [agent-evals-starter](https://github.com/jddavenportOpen/agent-evals-starter): a 24-task support-agent eval that runs offline. It includes a do-nothing agent and a do-anything agent to show when a passing score means nothing.
+- [agent-safety-case-study](https://github.com/jddavenportOpen/agent-safety-case-study): what I let the agents do, what broke, and what I changed after each incident.
 
 Most of this code was written by Claude Code agents I run. I pick what gets built, set the tests it has to pass, and check it by using it.
+
+Other: [recruit-copilot](https://github.com/jddavenportOpen/recruit-copilot) and [open-recruiter](https://github.com/jddavenportOpen/open-recruiter), two job-search tools. Truthfully I hate filling in job applications.
 
 Looking for AI PM roles. Available now.
 
